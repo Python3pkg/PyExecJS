@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: ascii -*-
-from __future__ import unicode_literals
+
 import sys
 import os
 import doctest
@@ -92,7 +92,7 @@ class DefaultRuntimeTest(unittest.TestCase, RuntimeTestBase):
         self.runtime = execjs
 
 
-for name, runtime in execjs.runtimes().items():
+for name, runtime in list(execjs.runtimes().items()):
     if not runtime.is_available():
         continue
     class_name = name.capitalize() + "RuntimeTest"

@@ -20,7 +20,7 @@ A short example:
 >>> ctx.call("add", 1, 2)
 3
 '''
-from __future__ import unicode_literals, division, with_statement
+
 
 from execjs._exceptions import Error, RuntimeError, ProgramError, RuntimeUnavailableError
 import execjs._runtimes

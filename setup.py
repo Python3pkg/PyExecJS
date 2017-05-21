@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: ascii -*-
-from __future__ import division, with_statement
+
 from setuptools import setup, find_packages
 import sys
 import io

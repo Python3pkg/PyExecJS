@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 # -*- coding: ascii -*-
-from __future__ import unicode_literals, division, with_statement
+
 
 
 Node = r"""(function(program, execJS) { execJS(program) })(function() { #{source}

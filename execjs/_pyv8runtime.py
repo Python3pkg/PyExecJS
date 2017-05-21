@@ -78,7 +78,7 @@ class PyV8Runtime(AbstractRuntime):
                 return None
             elif isinstance(obj, _PyV8.JSObject):
                 ret = {}
-                for k in obj.keys():
+                for k in list(obj.keys()):
                     v = cls.convert(obj[k])
                     if v is not None:
                         ret[cls.convert(k)] = v
